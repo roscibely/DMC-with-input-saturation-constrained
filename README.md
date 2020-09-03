@@ -1,1 +1,1 @@
-# DMC-with-input-saturation-constrained
+# Dynamic matrix control with input saturation constrained
