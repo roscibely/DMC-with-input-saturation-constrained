@@ -113,10 +113,10 @@ for k=1:1+40
     yd=(C1+D1*Fa)*x1(:,k)+D1*u_til(k);
     %%
     x_aw(:,k+1)=A1*x_aw(:,k)+B1*u_aw(k);
-    y_aw(k+1)=C1*x_aw(:,k)+D1*u_aw(k);
+    y_aw(k)=C1*x_aw(:,k)+D1*u_aw(k);
     %
    % y_aw=awgn(y_aw, 60,'measured'); 
-    y_in=y_aw(k+1)+yd; 
+    y_in=y_aw(k)+yd; 
 end
 
 %% Without AW 
@@ -171,7 +171,7 @@ end
 
 %% figures 
 figure(1); 
-plot(y_aw(2:end), 'k', 'linewidth', 2.5); hold on; plot(yr(1:end-1), 'g', 'linewidth', 2.5); hold on; stairs(r,'b--','linewidth', 2); hold on; grid on; legend('DMC with AW', 'DMC', 'Reference')
+plot(y_aw(1:end), 'k', 'linewidth', 2.5); hold on; plot(yr(1:end-1), 'g', 'linewidth', 2.5); hold on; stairs(r,'b--','linewidth', 2); hold on; grid on; legend('DMC with AW', 'DMC', 'Reference')
 set(gca,'fontsize',20,'fontname','times new roman');  xlim([0 40])
 ylabel('Output (cm)'); xlabel('Time (s)'); 
 figure (2); stairs(u_aw, 'k','linewidth',2); hold on; stairs(u, 'g--','linewidth',2);  grid on;
