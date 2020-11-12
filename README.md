@@ -1,5 +1,8 @@
-# Dynamic matrix control with input saturation constrained ⚙️
+# Dynamic matrix control 
+# with input saturation constrained ⚙️
 
+
+The dynamic matrix control (DMC) with input saturation constrained is implemented with an anti-windup (AW) technique proposed by [Turner et. al.](10.23919/ECC.2003.7085001)
     
    📍 Package required:
    
