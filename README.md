@@ -11,3 +11,13 @@
    [YALMIP](https://yalmip.github.io/)
    
    Solvers 👉[SEDUMI](https://yalmip.github.io/solver/sedumi/) 
+   
+   
+       @article{rego2020dynamic,
+        title={Dynamic matrix control with input saturation constrained},
+        author={Rego, Rosana CB and Silva, F Josiran and Costa, Marcus VS},
+        journal={Anais da Sociedade Brasileira de Autom{\'a}tica},
+        volume={2},
+        number={1},
+        year={2020}
+       }
